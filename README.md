@@ -17,7 +17,7 @@ Run Windows games on Linux in **isolated Wine sandboxes**. Each sandbox has its 
 ```bash
 python3 -m  venv  sandbox
 source sandbox/bin/activate
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 
 
