@@ -13,19 +13,13 @@ Run Windows games on Linux in **isolated Wine sandboxes**. Each sandbox has its 
 | **python3-tk** | GUI (`sudo apt install python3-tk`) |
 | **Wine + 32-bit + Vulkan** | One-shot install (see below) |
 
-### Install system packages
+##Install requirements
 
-From the Omega project folder:
+python3 -m  venv  sandbox
+source sandbox/bin/activate
+pip -r requirements.txt
 
-```bash
-./scripts/install-system-packages.sh
-```
 
-On **x86_64**, this enables `i386` multiarch and installs Wine, `wine32`, winetricks, Vulkan drivers, and related libraries. On **arm64**, 32-bit packages are skipped automatically.
-
-Optional: install common Windows runtimes into a prefix (vcredist, etc.) with `./scripts/install-deps.sh` — that targets the main Omega API prefix; sandboxes created by `omega_sandbox.py` use their own prefixes under `~/.omega_sandboxes/`.
-
----
 
 ## Start the app
 
