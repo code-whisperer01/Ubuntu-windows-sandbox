@@ -13,12 +13,12 @@ Run Windows games on Linux in **isolated Wine sandboxes**. Each sandbox has its 
 | **python3-tk** | GUI (`sudo apt install python3-tk`) |
 | **Wine + 32-bit + Vulkan** | One-shot install (see below) |
 
-##Install requirements
-
+## Install requirements
+```bash
 python3 -m  venv  sandbox
 source sandbox/bin/activate
 pip -r requirements.txt
-
+```
 
 
 ## Start the app
