@@ -1,0 +1,10 @@
+python3-tk
+wine
+winetricks
+winbind
+cabextract
+mesa-vulkan-drivers
+libvulkan1
+wine32
+mesa-vulkan-drivers:i386
+libvulkan1:i386
